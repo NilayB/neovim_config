@@ -1,0 +1,20 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Neovim local project settings
+.neoconf.json
+
+# Local state, swap, and backup files
+*.swp
+*.swo
+~*
+.undo/
+
+# Session files
+Session.vim
