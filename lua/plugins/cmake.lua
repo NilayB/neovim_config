@@ -20,4 +20,14 @@ return {
             {"<leader>ml", "<cmd>CMakeCloseExecutor<cr>", desc = "Close Console"},
         },
     },
+
+    {
+        "folke/which-key.nvim",
+        optional = true,
+        opts = {
+            spec = {
+                {"<leader>m", group = "CMake"},
+            },
+        },
+    }
 }

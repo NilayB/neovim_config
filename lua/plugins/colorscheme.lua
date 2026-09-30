@@ -1,13 +1,14 @@
 return {
-    -- add gruvbox
+    -- add gruvbox colorscheme
     { "ellisonleao/gruvbox.nvim" },
-    { "oskarnurm/koda.nvim" },
 
-    -- Configure LazyVim to load gruvbox
+    -- add koda colorscheme
     {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "gruvbox",
-        },
-    }
+        "oskarnurm/koda.nvim",
+        lazy = false, -- make sure to load this during startup if it main colorscheme
+        config = function()
+            -- require("koda").setup({ transparent = true })
+            vim.cmd("colorscheme koda")
+        end,
+    },
 }
