@@ -7,10 +7,10 @@ return {
         "hlsl",
         "wgsl",
       })
+    end
 
     -- Disable Tree-sitter indentation for C and C++
     opts.indent = opts.indent or { enable = true }
     opts.indent.disable = { "c", "cpp" }
-    end
   end,
 }
